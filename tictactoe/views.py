@@ -2,4 +2,4 @@ from django.http import HttpResponse
 
 
 def welcome(request):
-    return HttpResponse("comming web project -- :)")
+    return HttpResponse(".. Implemented Django and GitHub Repro")
