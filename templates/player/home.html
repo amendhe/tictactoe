@@ -4,25 +4,21 @@
 {%block title%}
 players Home
 {%endblock%}
+
 {% block content%}
-<h1>
-    <center>Welcome Player</center>
-</h1>
-.
-
-<h3>
-    <center> Hey.. there are total {{ngames}} games in the current database...!!</center>
-</h3>
-
-
-<ul>
-    <h4>
-
+<center>
+    <h1>
+        Welcome Player-- this is Players Home
+    </h1>
+    <h3>
+        Hey.. there are total {{ngames}} games in the current database...!!
+    </h3>
+    <ul>
         {%for g in games%}
         <li>
             Game _ {{g.id}}:- {{g.first_player}} vs {{g.second_player}}
         </li>
         {%endfor%}
-    </h4>
-</ul>
+    </ul>
+</center>
 {%endblock%}

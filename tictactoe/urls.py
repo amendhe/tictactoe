@@ -21,7 +21,7 @@ from .views import welcome
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^player/',include('Player.urls')),
-    path(r'', welcome),
+    url(r'', welcome, name= 'tictactoe_welcome'),
 
 
 ]
